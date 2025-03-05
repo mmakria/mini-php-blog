@@ -15,9 +15,14 @@
         </ul>
         <ul class="navbar-buttons">
             <li class="navbar-items">
-                <a href="/login.php" class="btn btn-secondary">Login</a>
+                <?php if (!empty($_SESSION['user'])): ?>
+                    <a href="/logout.php" class="btn btn-danger">Logout</a>
+                <?php else: ?>
+                    <a href="/login.php" class="btn btn-secondary">Login</a>
+                <?php endif; ?>
             </li>
         </ul>
+
 
     </nav>
 </header>

@@ -76,6 +76,8 @@ body {
     color: var(--light);
 }
 
+
+
 .btn-primary:hover {
     background: #004fa3;
 }
@@ -87,6 +89,15 @@ body {
 
 .btn-secondary:hover {
     background: #5a6268;
+}
+
+.btn-danger {
+    background: var(--danger);
+    color: var(--light);
+}
+
+.btn-danger:hover {
+    background: #c82333;
 }
 
 /************************************** ALERT **************************************/

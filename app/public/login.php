@@ -14,8 +14,6 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
     $password = $_POST['password'];
     //récupérer l'utilisateur en BDD
     $user = findOneUserByEmail($email);
-
-
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['user'] = [
             'id' => $user['id'],
@@ -30,15 +28,6 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
         $errorMessage = "Wrong email or password"; //pour éviter les bruts forces ne pas donner d'infos sur la nature de l'erreur
     }
 };
-
-// Récupère les informations envoyées par le formulaire
-
-// Vérifier si l'utilisateur existe en BDD (SQL)
-
-
-// Vérifier si le mot de passe est correct
-
-// on connecte l'utilisateur
 
 ?>
 
