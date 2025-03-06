@@ -5,8 +5,7 @@ require_once '/app/requests/users.php';
 
 // Vérifier si le formulaire a été soumis et que les données ne sont pas vides
 if (!empty($_POST['email']) && !empty($_POST['password'])) {
-    // Récupère les informations envoyées par le formulaire
-    // Nettoyer les données
+    // Récupère les informations envoyées par le formulaire // Nettoyer les données
     $email = strip_tags($_POST['email']);
     $password = $_POST['password'];
     //récupérer l'utilisateur en BDD
@@ -17,7 +16,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
             'email' => $user['email'],
             'firstName' => $user['first_name'],
             'lastName' => $user['last_name'],
-            'roles' => json_decode($user['roles'] ?? ''),
+            'roles' => json_decode($user['roles'] ?? '[]'),
         ];
         header('Location: /');
         exit(302);

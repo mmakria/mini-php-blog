@@ -39,9 +39,6 @@ function findOneUserByEmail(string $email): bool|array
  */
 function createUser(string $firstName, string $lastName, string $email, string $password): bool
 {
-    //INSERT INTO users(first_name, last_name, email, password
-    //) VALUES (:first_name, :last_name, :email, :password)
-
     try {
         global $db;
         $query = "INSERT INTO users (first_name, last_name, email, password) VALUES (:first_name, :last_name, :email, :password)";

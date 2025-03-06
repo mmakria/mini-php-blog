@@ -189,3 +189,29 @@ textarea {
     border: 1px solid var(--secondary);
     border-radius: var(--border-radius);
 }
+
+/************************************** TABLE **************************************/
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+thead{
+    border-bottom: 1px;
+}
+
+th, td{
+    padding: 1rem;
+}
+
+.table-btn{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.table-btn .btn{
+    width: max-content;
+}
