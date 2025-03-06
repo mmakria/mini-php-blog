@@ -10,6 +10,9 @@
     --border-radius: 8px;
 }
 
+
+
+
 /************************************** RESET **************************************/
 * {
     margin: 0;
@@ -98,6 +101,15 @@ body {
 
 .btn-danger:hover {
     background: #c82333;
+}
+
+.btn-light {
+    background: var(--light);
+    color: var(--dark);
+}
+
+.btn-light:hover {
+    background: #e2e6ea;
 }
 
 /************************************** ALERT **************************************/

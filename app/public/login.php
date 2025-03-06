@@ -1,13 +1,10 @@
 <?php
 session_start(); // toujours en haut
-
 require_once '/app/requests/users.php';
-//var_dump(findAllUsers());
-//var_dump(password_hash("123456", PASSWORD_ARGON2I));
+
 
 // Vérifier si le formulaire a été soumis et que les données ne sont pas vides
 if (!empty($_POST['email']) && !empty($_POST['password'])) {
-
     // Récupère les informations envoyées par le formulaire
     // Nettoyer les données
     $email = strip_tags($_POST['email']);
@@ -28,7 +25,6 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
         $errorMessage = "Wrong email or password"; //pour éviter les bruts forces ne pas donner d'infos sur la nature de l'erreur
     }
 };
-
 ?>
 
 <!doctype html>
@@ -46,16 +42,15 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
 require_once '/app/public/layout/_header.php';
 ?>
 <main>
+    <?php require_once '/app/public/layout/_messages.php';?>
     <section class="container mt-4">
         <h1 class="title text-center">Se connecter</h1>
         <form action="/login.php" method="post" class="card mt-4 mx-auto w-50">
-
             <?php if (!empty($errorMessage)): ?>
                 <div class="alert alert-danger">
                     <?= $errorMessage; ?>
                 </div>
             <?php endif; ?>
-
 
             <div class="form-group">
                 <label for="email">email</label>

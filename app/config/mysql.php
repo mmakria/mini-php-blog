@@ -11,7 +11,6 @@ try {
 //    var_dump($db->query('SELECT * FROM users')->fetchAll());
 } catch (PDOException $e) {
     die("Connection failed: " . $e->getMessage());
-
 }
 
 
