@@ -53,7 +53,7 @@ $users = findAllUsers();
                     <td><?= $user["email"] ?></td>
                     <td><?= $user["roles"] ?></td>
                     <td class="table-btn">
-                        <a href="#" class="btn  btn-secondary"> Modifier</a>
+                        <a href="/admin/users/update.php?id=<?= $user["id"] ?>" class="btn  btn-secondary"> Modifier</a>
                         <a href="#" class="btn  btn-danger"> Supprimer</a>
                     </td>
                 </tr>

@@ -50,11 +50,22 @@ function createUser(string $firstName, string $lastName, string $email, string $
     } catch (PDOException $e) {
         return false;
     }
-return true;
+    return true;
 }
 
 
+/**
+ * Récupère un utilisateur en utilisant l'ID
+ * @param $id
+ * @return bool|array
+ */
 
+function findOneUserById($id): bool|array{
+    global $db;
+    $sql = $db->prepare("SELECT * FROM users WHERE id = :id");
+    $sql->execute(['id' => $id]);
+    return $sql->fetch();
+}
 
 
 
