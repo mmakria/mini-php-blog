@@ -28,12 +28,11 @@ if (!empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST
 }
 ?>
 
-
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S'inscrire | My first app PHP</title>
+    <title>Register | My first app PHP</title>
     <link rel="stylesheet" href="/assets/styles/main.css">
 </head>
 <body>
@@ -42,7 +41,7 @@ if (!empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST
     <?php require_once '/app/public/layout/_messages.php';?>
     <p class="hero"></p>
     <section class="container mt-4">
-        <h1 class="title text-center">S'inscrire</h1>
+        <h1 class="title text-center">Sign in</h1>
         <form action="/register.php" method="POST" class="mt-4">
             <?php if (!empty($errorMessage)): ?>
                 <div class="alert alert-danger">
@@ -50,12 +49,12 @@ if (!empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST
                 </div>
             <?php endif; ?>
             <div class="form-group">
-                <label for="firstName"> Prénom</label>
+                <label for="firstName">Firstname</label>
                 <input type="text" name="first_name" id="first_name" required placeholder="John">
             </div>
             
             <div class="form-group">
-                <label for="lastName">Nom</label>
+                <label for="lastName">Lastname</label>
                 <input type="text" name="last_name" id="last_name" required placeholder="Doe">
             </div>
             <div class="form-group">
@@ -63,10 +62,10 @@ if (!empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST
                 <input type="email" name="email" id="email" required placeholder="jonh@exemple.com">
             </div>
             <div class="form-group">
-                <label for="password">Mot de passe</label>
+                <label for="password">Password</label>
                 <input type="password" name="password" id="password" required placeholder="SECRET">
             </div>
-            <button type="submit" class="btn btn-primary">S'inscrire</button>
+            <button type="submit" class="btn btn-primary">Sign in</button>
         </form>
     </section>
 </main>

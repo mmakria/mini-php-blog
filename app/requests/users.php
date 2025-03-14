@@ -2,6 +2,7 @@
 require_once '/app/config/mysql.php';
 
 
+
 /**
  *Récupère tous les utilisateurs en BDD
  * @return array
@@ -60,7 +61,8 @@ function createUser(string $firstName, string $lastName, string $email, string $
  * @return bool|array
  */
 
-function findOneUserById($id): bool|array{
+function findOneUserById($id): bool|array
+{
     global $db;
     $sql = $db->prepare("SELECT * FROM users WHERE id = :id");
     $sql->execute(['id' => $id]);
@@ -68,6 +70,56 @@ function findOneUserById($id): bool|array{
 }
 
 
+/**
+ * Met à jour un utilisateur en BDD
+ * @param int $id
+ * @param string $firstName
+ * @param string $lastName
+ * @param string $email
+ * @param string|null $password
+ * @return bool
+ */
+function updateUser(int $id, string $firstName, string $lastName, string $email, ?string $password): bool
+{
+    global $db;
+    // UPDATE users SET first_name = "dupont", last_name ='Dupont', email='pierr@test',password = "password", WHERE id = 1;
+    $query = "UPDATE users SET first_name = :first_name, last_name = :last_name, email = :email";
+    $params = ['first_name' => $firstName,
+        'last_name' => $lastName,
+        'email' => $email,];
+
+    if (!empty($password)) {
+        $query .= ", password = :password";
+        $params['password'] = password_hash($password, PASSWORD_ARGON2I);
+
+    }
+    // je match l'ID
+    $query .= " WHERE id = :id";
+    $params['id'] = $id;
+
+    try {
+        $sql = $db->prepare($query);
+        $sql->execute($params);
+    } catch (PDOException $e) {
+        return false;
+    }
+    return true;
+
+
+}
+
+function deleteUser(int $id): bool
+{
+    global $db;
+    try {
+        $query = "DELETE FROM users WHERE id = :id";
+        $sql = $db->prepare($query);
+        $sql->execute(['id' => $id]);
+    } catch (PDOException $e) {
+        return false;
+    };
+    return true;
+}
 
 
 

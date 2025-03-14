@@ -41,24 +41,26 @@ $users = findAllUsers();
                 <th>Email</th>
                 <th>Roles</th>
                 <th>Actions</th>
-
             </tr>
             </thead>
             <tbody>
             <?php foreach ($users as $user) : ?>
                 <tr>
-                    <?php var_dump($user); ?>
+
                     <td><?= $user["id"] ?></td>
                     <td><?= $user["first_name"] . " " . $user["last_name"] ?></td>
                     <td><?= $user["email"] ?></td>
                     <td><?= $user["roles"] ?></td>
                     <td class="table-btn">
                         <a href="/admin/users/update.php?id=<?= $user["id"] ?>" class="btn  btn-secondary"> Modifier</a>
-                        <a href="#" class="btn  btn-danger"> Supprimer</a>
+
+                        <form action="/admin/users/delete.php" method="post" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer ce user ?')">
+                            <input type="hidden" name="id" value="<?= $user["id"] ?>">
+                            <button type="submit" class=" btn btn-danger">Supprimer</button>
+                        </form>
                     </td>
                 </tr>
             <?php endforeach; ?>
-
             </tbody>
         </table>
     </section>

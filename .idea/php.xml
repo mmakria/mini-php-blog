@@ -12,13 +12,15 @@
   </component>
   <component name="PhpCodeSniffer">
     <phpcs_settings>
-      <phpcs_by_interpreter asDefaultInterpreter="true" interpreter_id="87751936-2808-45ed-a2f5-f70e83aa1d6b" timeout="30000" />
+      <phpcs_by_interpreter asDefaultInterpreter="true" interpreter_id="16e86817-682c-496c-b6cc-7a0777a6f933" timeout="30000" />
     </phpcs_settings>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="8.4" />
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.0">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  </component>
   <component name="PhpStan">
     <PhpStan_settings>
-      <phpstan_by_interpreter asDefaultInterpreter="true" interpreter_id="87751936-2808-45ed-a2f5-f70e83aa1d6b" timeout="60000" />
+      <phpstan_by_interpreter asDefaultInterpreter="true" interpreter_id="16e86817-682c-496c-b6cc-7a0777a6f933" timeout="60000" />
     </PhpStan_settings>
   </component>
   <component name="PhpStanOptionsConfiguration">
@@ -26,7 +28,7 @@
   </component>
   <component name="Psalm">
     <Psalm_settings>
-      <psalm_fixer_by_interpreter asDefaultInterpreter="true" interpreter_id="87751936-2808-45ed-a2f5-f70e83aa1d6b" timeout="60000" />
+      <psalm_fixer_by_interpreter asDefaultInterpreter="true" interpreter_id="16e86817-682c-496c-b6cc-7a0777a6f933" timeout="60000" />
     </Psalm_settings>
   </component>
   <component name="PsalmOptionsConfiguration">
