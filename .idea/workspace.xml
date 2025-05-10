@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="96b7f0a1-469a-4fac-944b-b6aeab225a2b" name="Changes" comment="feat(auth):add login feature">
+      <change afterPath="$PROJECT_DIR$/app/public/admin/articles/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/admin/articles/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/admin/articles/modify.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/admin/articles/update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/admin/categories/dashboard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/admin/categories/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/admin/categories/update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/admin/users/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/articles/posts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/blog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/layout/_footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/requests/articles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/requests/categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PHP CCI LYON 2025.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PHP CCI LYON 2025.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/mak.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/admin/users/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/admin/users/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/admin/users/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/admin/users/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/assets/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/assets/styles/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/layout/_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/layout/_header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/layout/_messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/layout/_messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/requests/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/requests/users.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <execution>
+      <interpreter composer="composer" />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2toQnGLWEakE02xAeqaIYEehc1z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;developpement&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mak/Desktop/DWWM/Pierre-Bertrand DWWM/PHP CCI LYON 2025&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;web-ide.project.structure&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/public/admin/users" />
+      <recent name="$PROJECT_DIR$/app/public" />
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PS-243.25659.45" />
+        <option value="bundled-php-predefined-a98d8de5180a-1ec7b7818973-com.jetbrains.php.sharedIndexes-PS-243.25659.45" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="96b7f0a1-469a-4fac-944b-b6aeab225a2b" name="Changes" comment="" />
+      <created>1741016112199</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741016112199</updated>
+      <workItem from="1741016113268" duration="1431000" />
+      <workItem from="1741075500064" duration="3731000" />
+      <workItem from="1741079961104" duration="9101000" />
+      <workItem from="1741092206310" duration="11249000" />
+      <workItem from="1741161983710" duration="4437000" />
+      <workItem from="1741166732540" duration="22118000" />
+      <workItem from="1741199058623" duration="3417000" />
+      <workItem from="1741202529672" duration="145000" />
+      <workItem from="1741202678553" duration="234000" />
+      <workItem from="1741202939399" duration="666000" />
+      <workItem from="1741203616927" duration="147000" />
+      <workItem from="1741203767004" duration="48000" />
+      <workItem from="1741203818719" duration="508000" />
+      <workItem from="1741205046368" duration="2250000" />
+      <workItem from="1741250294608" duration="22657000" />
+      <workItem from="1741291861731" duration="3932000" />
+      <workItem from="1741296832572" duration="2404000" />
+      <workItem from="1741334695906" duration="11824000" />
+      <workItem from="1741348422848" duration="16904000" />
+      <workItem from="1741454129900" duration="15396000" />
+      <workItem from="1741632889180" duration="2136000" />
+      <workItem from="1741635447728" duration="23000" />
+      <workItem from="1741709778533" duration="44000" />
+      <workItem from="1741766917709" duration="85000" />
+      <workItem from="1741768012038" duration="3690000" />
+      <workItem from="1741771757284" duration="26000" />
+      <workItem from="1741813911935" duration="9166000" />
+      <workItem from="1741854367304" duration="28266000" />
+      <workItem from="1741892616917" duration="11728000" />
+      <workItem from="1741941602084" duration="14128000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat(auth):add login feature">
+      <option name="closed" value="true" />
+      <created>1741182743890</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741182743890</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(auth):add login feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(auth):add login feature" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

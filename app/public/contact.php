@@ -1,7 +1,5 @@
 <?php
 
-var_dump($_POST);
-
 if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message'])) {
     $name = strip_tags($_POST['name']);
     $email = strip_tags($_POST['email']);
@@ -27,15 +25,12 @@ if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message'
 <?php require_once '/app/public/layout/_header.php'; ?>
 <main>
 
-    <h1>Votre message:</h1>
+    <h1>Your message:</h1>
     <p><?= $name; ?></p>
     <p><?= $email; ?></p>
     <p><?= $message; ?></p>
 
-    <?php
 
-    var_dump($_COOKIE); // fr
-    ?>
 
 </main>
 
